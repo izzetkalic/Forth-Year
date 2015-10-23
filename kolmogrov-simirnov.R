@@ -74,7 +74,7 @@ UNKNOWNNORMALITY <- function(y,value,dtable,alpha){
     if(max(dvalues)>dtable){
       cat("\nSince Dc>Dt, Ho is rejected. Sample data has not been drawn from normal")
     }else{
-      cat("\nSince Dc<Dt, Ho is not rejected. Sample data has been drawn from normal")
+      cat("\nSince Dc<Dt, Ho is not rejected. Sample data has been drawn from normal distribution.")
     }
   }else{
     a <- sqrt(length(x))*max(dvalues)
@@ -92,9 +92,9 @@ UNKNOWNNORMALITY <- function(y,value,dtable,alpha){
     cat("\n",a)
     cat("\n",p)
     if(p<alpha){
-      cat("\nSince p<alpha, Ho is rejected. Sample data has not been drawn from normal")
+      cat("\nSince p<alpha, Ho is rejected. Sample data has not been drawn from normal distribution.")
     }else{
-      cat("\nSince p>alpha, Ho is not rejected. Sample data has been drawn from normal")
+      cat("\nSince p>alpha, Ho is not rejected. Sample data has been drawn from normal distribution.")
     }
   }
 }
