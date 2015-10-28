@@ -82,7 +82,7 @@ UNKNOWNNORMALITY <- function(y,value,dtable,alpha){
       p <- 1
     }else if(0.27<=a&1>a){
       Q <- exp(-1.23370*(a^(-2)))
-      p <- 1-((2.506628/2)*(Q+Q^9+Q^25))
+      p <- 1-((2.506628/a)*(Q+Q^9+Q^25))
     }else if(1<=a&3.1>a){
       Q <- exp(-2*a^2)
       p <- 2*(Q-Q^4+Q^9-Q^16)
